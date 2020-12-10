@@ -29,12 +29,11 @@ while not end_of_game:
 
     if user_input not in hangman_word:
         lives-=1
-        print(aciiarts.stages[lives])
+        
         if lives==0:
             print("you lose")
             end_of_game=True
-
-
+    print(aciiarts.stages[lives])
     if "_" not in display:
         end_of_game=True
         print("you won")
