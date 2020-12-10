@@ -29,7 +29,6 @@ while not end_of_game:
 
     if user_input not in hangman_word:
         lives-=1
-        
         if lives==0:
             print("you lose")
             end_of_game=True
