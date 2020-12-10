@@ -12,7 +12,6 @@ list(hangman_word)
 display=[]
 for i in range(1,len(hangman_word)+1):
     display+="_"
-print(f"hangi kelime görmek için {hangman_word}")
 
 end_of_game=False
 
@@ -25,7 +24,6 @@ while not end_of_game:
         letter=hangman_word[position]
         if letter==user_input:
             display[position]=letter
-
 
     if user_input not in hangman_word:
         lives-=1
